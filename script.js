@@ -10,6 +10,8 @@ buttonCalcular.addEventListener('click', ()=> {
 
         let calculoIMC = peso / (altura * altura).toFixed(2);
 
+        resultado.textContent = calculoIMC;
+
     }else {
         resultado.textContent = 'Preencha todos os campos';
     }
