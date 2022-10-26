@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --background: #1f0057;
     --background-calculadora: #4300be;
@@ -11,6 +17,8 @@
 }
 
 body{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     background-color: var(--background);
@@ -19,49 +27,44 @@ body{
 }
 
 main {
-    width: 100vw;
-    height: 100vh;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
-
-.container {    
-    padding: 30px;
-    line-height: 20px;
-}
-
-.title {
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 25px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .div-nome, .div-altura, .div-peso, .div-calc {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     margin-bottom: 16px;
+    gap: 10px;
 }
 
-div input {
-    width: 100%;
-    height: 30px;
-    margin: 0;
+input, button {
+    padding: 10px;
+    font-size: 20px;
+    outline: 0;
+    border: none;    
 }
 
 button {
-    width: 258px;
-    height: 36px;
+    cursor: pointer;
     background-color: var(--background-calculadora);
     color: var(--color-text-button);
+    align-items: center;
     border: none;
     margin-bottom: 15px;
 }
 
-.result {
-    width: 258px;
-    height: 36px;
+#resultado {
+    padding: 0 30px;
 }
 
+@media screen and(max-width: 480px) {
+    body, input, button {
+        font-size: 15px;
+    }
+}
