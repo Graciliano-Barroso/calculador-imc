@@ -27,8 +27,7 @@ main {
     text-align: center;
 }
 
-.container {
-    background-color: var(--background-calculadora);
+.container {    
     padding: 30px;
     line-height: 20px;
 }
@@ -47,16 +46,22 @@ main {
 }
 
 div input {
-    width: 250px;
+    width: 100%;
     height: 30px;
+    margin: 0;
 }
 
 button {
     width: 258px;
     height: 36px;
-    background-color: var(--background);
+    background-color: var(--background-calculadora);
     color: var(--color-text-button);
     border: none;
     margin-bottom: 15px;
+}
+
+.result {
+    width: 258px;
+    height: 36px;
 }
 
