@@ -1,0 +1,62 @@
+:root {
+    --background: #1f0057;
+    --background-calculadora: #4300be;
+    --background-input: #ffffff;
+    --color-text-input: #000000;
+    --color-text: #ffffff;
+    --background-button: #000000;
+    --color-text-button: #ffffff;
+
+    --Sans: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+    font-family: var(--Sans);
+    color: var(--color-text);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    background-color: var(--background-calculadora);
+    padding: 30px;
+    line-height: 20px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.div-nome, .div-altura, .div-peso, .div-calc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+div input {
+    width: 250px;
+    height: 30px;
+}
+
+button {
+    width: 258px;
+    height: 36px;
+    background-color: var(--background);
+    color: var(--color-text-button);
+    border: none;
+    margin-bottom: 15px;
+}
+
